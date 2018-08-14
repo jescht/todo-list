@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Todo List</title>
+
+    </head>
+    <body>
+            <h2>Welcome!</h2>
+            <p>TechLadies Bootcamp Technical Task</p>
+            
+            <div class="tab">
+              <button class="tablinks" onclick="openTab(event, 'About')">About</button>
+              <button class="tablinks" onclick="openTab(event, 'TodoList')">Todo List</button>
+            
+            </div>
+            
+            <div id="About" class="tabcontent">
+
+                <img src = "./tortoise.jpg" alt="Profile image of a tortoise" class ="responsive center">
+              
+              <p class = "center">Jessica is an English Language teacher with a never say die attitude. She writes, draws and now she wants to code! She would love to be part of TechLadies Bootcamp 4 and can't wait to embrace the terror of being outside her comfort zone.</p>
+            </div>
+            
+            <div id="TodoList" class="tabcontent">
+              
+              <p class = "center"><em>“Rename your <b>“To-Do”</b> list to your <b>“Opportunities”</b> list. Each day is a treasure chest filled with limitless opportunities; take joy in checking many off your list.” 
+                    ― Steve Maraboli</em></p> 
+                    
+                    <div id="app"></div>
+            </div>
+            
+
+            
+            <script>
+            function openTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+            </script>
+
+    </body>
+</html>

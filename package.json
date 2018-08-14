@@ -1,0 +1,23 @@
+{
+  "name": "todolist",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-scripts": "1.1.4",
+    "homepage": "http://jescht.github.io/todo-list"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "todo-list -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.2.0",
+    "todo-list": "0.0.3"
+  }
+}
