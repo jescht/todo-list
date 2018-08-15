@@ -7,10 +7,10 @@ body {
 
 
 p {
-    font-size: 16px;
+    font-size: 17px;
 }
   
-img {
+.rounded {
     border-radius: 50%;
 }
 
